@@ -113,7 +113,8 @@
               *ngFor="let mGrade of getGradesFromMonth(element, i)"
               [class]="mGrade.mark.markDisplayValue | colorMark: true"
               class="matColumnGradesMark"
-              [matTooltip]="(mGrade.date | date) || ''"
+              [matTooltip]="((mGrade.date | date) || '') + '\n\n' + (mGrade.text || '')" 
+              matTooltipClass="multiline-tooltip"
             >
               {{mGrade.mark.name}}
             </div>
