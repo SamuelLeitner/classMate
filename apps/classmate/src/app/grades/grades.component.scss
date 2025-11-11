@@ -113,3 +113,9 @@ $hover-color: rgba($color: #000000, $alpha: 0.05);
 ::ng-deep .multiline-tooltip{
   white-space: pre-line; 
 }
+.grade-description {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}

@@ -167,6 +167,9 @@
             <span>{{
               grade.date | date
             }}</span>
+            <span class="grade-description">{{
+              grade.text
+            }}</span>
             <span
               [class]="grade.mark.markDisplayValue | colorMark: true"
             >{{ grade.mark.name }}</span>
